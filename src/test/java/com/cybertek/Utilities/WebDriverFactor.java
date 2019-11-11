@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebDriverFactor {
  // write a static method that takes a string parameter
  //based on value of the parameter
- //the method ust return from chromedriver or firefox object
+ //the method ust return from chromedriver or firefoxdriver object
  //name of the method : getDriver
 
  public static WebDriver getDriver(String browserType){
