@@ -20,27 +20,32 @@ public class VerifyURLnotchange {
     public static void main(String[] args) {
         // open chrome
         WebDriver driver = WebDriverFactor.getDriver("chrome");
+        driver.get("https://practice.cybertekschool.com/forgot_password");
 
-driver.get("https://practice.cybertekschool.com/forgot_password");
 
-//  save url to string variable
+        //  save url to string variable
         String expectedUrl = driver.getCurrentUrl();
 
 
         // click on Retrieve password
-    WebElement retrievePasswordButton =driver.findElement(By.id("form_submit"));
-    retrievePasswordButton.click();
+       WebElement retrievePasswordButton =driver.findElement(By.id("form_submit"));
+       retrievePasswordButton.click();
 
-String  actualUrl = driver.getCurrentUrl();
 
-if (expectedUrl.equals(actualUrl)){
-    System.out.println("Pass");
+       //save url after clicking button
+        String  actualUrl = driver.getCurrentUrl();
 
-}else {
-    System.out.println("Fail");
-}
 
-// close the browser
+        //compare two url
+        if (expectedUrl.equals(actualUrl)){
+            System.out.println("Pass");
+
+       }else {
+            System.out.println("Fail");
+
+        }
+
+        // close the browser
         driver.quit();
 
 

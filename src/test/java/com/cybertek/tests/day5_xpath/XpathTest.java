@@ -1,24 +1,27 @@
-package com.cybertek.tests.day4_basic_locators;
+package com.cybertek.tests.day5_xpath;
 
 import com.cybertek.Utilities.WebDriverFactor;
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.w3c.dom.ls.LSOutput;
 
-public class IdLocatorTest {
+public class XpathTest {
 
     public static void main(String[] args) {
 
-        WebDriver driver = WebDriverFactor.getDriver("chrome");
+
+        WebDriver driver= WebDriverFactor.getDriver("chrome");
         driver.manage().window().maximize();
+
 
         driver.get("http://practice.cybertekschool.com/multiple_buttons");
 
-        WebElement dontClickButton = driver.findElement(By.id("disappearing_button"));
+        WebElement homelink = driver.findElement(By.xpath("/html/body/nav/ul/li/a"));
 
-        dontClickButton.click();
+homelink.click();
 
-        driver.quit();
 
 
 
@@ -27,5 +30,4 @@ public class IdLocatorTest {
 
 
     }
-
 }

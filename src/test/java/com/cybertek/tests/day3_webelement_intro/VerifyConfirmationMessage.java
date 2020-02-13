@@ -41,13 +41,13 @@ public class VerifyConfirmationMessage {
 
        String actualEmail = emailInputbox.getAttribute("value");
 
-if (expectedEmail.equals(actualEmail)){
-    System.out.println("PASS");
+        if (expectedEmail.equals(actualEmail)){
+             System.out.println("PASS");
 
-}else {
-    System.out.println("FAIL");
-    System.out.println("expectedEmail =" + expectedEmail);
-    System.out.println("actualEmail =" + actualEmail);
+        }else {
+             System.out.println("FAIL");
+             System.out.println("expectedEmail =" + expectedEmail);
+             System.out.println("actualEmail =" + actualEmail);
 
 }
 

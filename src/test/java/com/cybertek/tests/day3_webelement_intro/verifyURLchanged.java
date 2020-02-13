@@ -16,53 +16,54 @@ public class verifyURLchanged {
 
 
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
-        // open the chrome
-        WebDriver driver = WebDriverFactor.getDriver("chrome");
-
-// go to http://practice.cybertekschool.com/forgot_password links to an external
-        driver.get("http://practice.cybertekschool.com/forgot_password");
-
-// enter any email
-        WebElement emailInput = driver.findElement(By.name("email"));
-
-        // send keys ()-->  send keyboard actions to webelement / enters given text
-        emailInput.sendKeys("email@gmail.com");
+         // open the chrome
+         WebDriver driver = WebDriverFactor.getDriver("chrome");
 
 
-        // locate to assword button
-        WebElement retrievePasswordButton =driver.findElement(By.id("form_submit"));
-
-        retrievePasswordButton.click();
-
-      String expectedUrl ="http://practice.cybertekschool.com/email_sent";
-      String actualUrl  =driver.getCurrentUrl();
-
-      if (expectedUrl.equals(actualUrl)) {
-                System.out.println("PASS");
-
-            }else {
-                System.out.println("FAIL");
-          System.out.println("actualUrl = "+actualUrl);
-          System.out.println("expectedUrl ="+expectedUrl);
+         // go to http://practice.cybertekschool.com/forgot_password links to an external
+         driver.get("http://practice.cybertekschool.com/forgot_password");
 
 
-      }
-
-//  close the browser
-            driver.quit();
+         // enter any email
+         WebElement emailInput = driver.findElement(By.name("email"));
 
 
+         // send keys ()-->  send keyboard actions to webelement / enters given text
+         emailInput.sendKeys("email@gmail.com");
 
 
+         // locate to password button
+         WebElement retrievePasswordButton = driver.findElement(By.id("form_submit"));
+         retrievePasswordButton.click();
+
+         String expectedUrl = "http://practice.cybertekschool.com/email_sent";
+         String actualUrl = driver.getCurrentUrl();
+
+         if (expectedUrl.equals(actualUrl)) {
+             System.out.println("PASS");
+
+         } else {
+             System.out.println("FAIL");
+             System.out.println("actualUrl = " + actualUrl);
+             System.out.println("expectedUrl =" + expectedUrl);
+         }
 
 
+         //  close the browser
+         driver.quit();
+
+
+     }
 
 
 
 
-        }
+
+
+
+
 
 
 

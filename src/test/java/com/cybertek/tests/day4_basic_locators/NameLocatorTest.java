@@ -46,7 +46,7 @@ if (expectedMessage.equals(actualMessage)){
     System.out.println("actualMessage = " + actualMessage);
 }
 
-
+ driver.quit();
 
 
 

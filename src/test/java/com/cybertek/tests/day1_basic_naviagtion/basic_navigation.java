@@ -19,10 +19,12 @@ public class basic_navigation {
 
 // open website
         driver.get("https://amazon.com");
+        driver1.get("https://google.com");
 
 
 //get the title and print it
         System.out.println(driver.getTitle());
+        System.out.println(driver1.getTitle());
 
 
     }
