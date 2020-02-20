@@ -1,4 +1,4 @@
-package com.cybertek.tests.day10_sync;
+package com.cybertek.tests.day10_synchronization;
 
 import com.cybertek.Utilities.WebDriverFactor;
 import org.openqa.selenium.By;
@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 public class ExplicitWaitTest {
 

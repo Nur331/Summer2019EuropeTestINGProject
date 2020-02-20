@@ -1,4 +1,4 @@
-package com.cybertek.tests.day10_sync;
+package com.cybertek.tests.day10_synchronization;
 
 import com.cybertek.Utilities.WebDriverFactor;
 import org.openqa.selenium.By;
