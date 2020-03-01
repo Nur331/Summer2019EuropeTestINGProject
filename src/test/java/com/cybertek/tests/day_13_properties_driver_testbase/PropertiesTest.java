@@ -14,9 +14,9 @@ public class PropertiesTest {
 
 
         System.out.println(ConfigurationReader.get("url"));
-        System.out.println(ConfigurationReader.get("salesmanager_username"));
-        //if your key not exist in prorperties file, it will return null
-        System.out.println(ConfigurationReader.get("storemanager"));
+        System.out.println(ConfigurationReader.get("salesManager_username"));
+        //if your key not exist in properties file, it will return null
+        System.out.println(ConfigurationReader.get("storeManager"));
 
     }
 
