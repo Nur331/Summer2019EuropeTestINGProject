@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
- class CalendarEventsPage extends BasePage {
+ class CalendarEventsPage extends  BasePage{
 
     public CalendarEventsPage() {
         PageFactory.initElements(Driver.get(), this);
