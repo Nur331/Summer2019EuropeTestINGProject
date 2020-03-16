@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class DropDown_element {
+public class SelectClassTest {
 
 @Test
     public void test1() {
@@ -24,7 +24,10 @@ public class DropDown_element {
     // create select object by passing the element as a constructor
     Select stateList = new Select(dropdownElement);
 
+//getOptions->retuns all the available options from the dropdown list
     List<WebElement> options = stateList.getOptions();
+
+    System.out.println(options.size());
 
     for (WebElement option : options) {
           System.out.println(option.getText());

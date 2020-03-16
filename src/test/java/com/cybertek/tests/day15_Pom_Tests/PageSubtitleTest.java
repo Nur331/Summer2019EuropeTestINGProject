@@ -49,5 +49,39 @@ public class PageSubtitleTest extends TestBase {
 
 
     }
+   /*home work
+
+   VERIFY  Radio Buttons
+    open browser
+    Login as driver
+    Go to Activities--> Calender
+    Click on create calendar events
+    Click on repeat
+    Verify that repeat every day is checked
+    Verify that repeat weekday is not checked
+
+
+    VERIFY REPEAT OPTIONS
+    open browser
+    Login as driver
+    Go to Activities-->Calender
+   Click on create calendar events
+   Click on repeat
+   verify that repeat options are Daily, Weekly, Monthly, Yearly(in this order).
+
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
