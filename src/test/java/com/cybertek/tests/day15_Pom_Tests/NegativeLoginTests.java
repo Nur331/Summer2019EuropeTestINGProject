@@ -33,7 +33,7 @@ public class NegativeLoginTests extends TestBase {
     loginPage.passwordInput.sendKeys("UserUser123");
     loginPage.loginBtn.click();
 
-    Assert.assertEquals(driver.getCurrentUrl(), "https://qa3.vytrack.com/");
+    Assert.assertEquals(driver.getCurrentUrl(), "https://qa3.vytrack.com/user/login");
 
 
 }

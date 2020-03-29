@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Vytrack Smoke Suite">
+
+
+            <!--     qa1 environment  -->
+    <test name=" QA1 Smoke test">
+
+        <!--  How to run test case in different environments: parameter  -->
+        <!--  this is how to adding parameters in testng methods    -->
+        <parameter name="env" value="qa1"></parameter>
+
+        <classes>
+            <class name="com.cybertek.tests.day15_Pom_Tests.PositiveLoginTest"></class>
+
+        </classes>
+
+    </test>
+
+
+    <!--     qa2 environment  -->
+    <test name=" QA2 Smoke test">
+
+        <parameter name="env" value="qa2"></parameter>
+
+        <classes>
+            <class name="com.cybertek.tests.day15_Pom_Tests.PositiveLoginTest"></class>
+
+        </classes>
+
+    </test>
+
+
+    <!--     qa3 environment  -->
+    <test name=" QA3 Smoke test">
+
+        <parameter name="env" value="qa3"></parameter>
+
+        <classes>
+            <class name="com.cybertek.tests.day15_Pom_Tests.PositiveLoginTest"></class>
+
+        </classes>
+
+    </test>
+
+
+
+
+
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

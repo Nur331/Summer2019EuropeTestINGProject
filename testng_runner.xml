@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Vytrack automation" verbose ="10">
+<!--    verbose is controlling log reports starting from 1, 
+ the more you add number it will give more details-->
+
+    <!--  1 . How to run all tests (<packages>) (batch run)-->
+<!--xml runner looks for @test annotation, 
+if your test case under main method it will not run-->
+    <test name="Vytrack smoke tests">
+
+
+        <packages>
+            <package name="com.cybertek.tests.day_14_webtables"></package>
+            <!--           <package name=".*"></package>    -->
+
+        </packages>
+
+        <!--  2.  How to run multiple classes from different packages    -->
+        <classes>
+            <class name="com.cybertek.tests.day17_review_screenshot.verifyContactInfoTests"></class>
+
+
+            <!--   3.  How to run one test case from specific class   -->
+           <class name="com.cybertek.tests.day15_Pom_Tests.NegativeLoginTests">
+
+               <methods>
+                   <include name="WrongPasswordTest" ></include>
+                   <!--   when you want to ignore one test case from multiple test cases
+                   in one class , use <exclude> method  -->
+                   <exclude name="wrongUsername"></exclude>
+               </methods>
+
+           </class>
+
+
+
+
+
+
+
+       </classes>
+
+        
+
+        
+    </test>
+    
+</suite>
+
